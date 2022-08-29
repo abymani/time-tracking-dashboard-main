@@ -7,70 +7,101 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/d6eed24291.js" crossorigin="anonymous"></script>
   <script src="index.js" defer></script>
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
  
 </head>
 <body>
 
-  <button><h1>click me</h1></button>
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+  <main>
+    <div class="item1">
+      <div class="sub"> 
+        <img src="./images/image-jeremy.png" alt="" width="50">
+        <div>
+          <p class="report-for">Report for</p>
+          <h1 class="name">Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="frequency">
+        <a href="#" id="daily">Daily</a>
+        <a href="#" id="weekly">Weekly</a>
+        <a href="#" id="monthly">Monthly</a>
+      </div>
+    </div>
+    <div class="item2">
+      <div class="work subcard">
+        <div class="top">
+          <span class="title">work</span>
+          <a href="#"> <i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <div>
+          <h1 class="time"></h1>
+          <p class="previous"></p>
+        </div>
+      </div>
+    </div>
+    <div class="item3">
+      <div class="play subcard">
+        <div class="top">
+          <span class="title">play</span>
+          <a href="#"> <i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <div>
+          <h1 class="time"></h1>
+          <p class="previous"></p>
+        </div>
+      </div>
+    </div>  
+    <div class="item4">
+      <div class="study subcard">
+        <div class="top">
+          <span class="title">study</span>
+          <a href="#"> <i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <div>
+          <h1 class="time"></h1>
+          <p class="previous"></p>
+        </div>
+      </div>
+    </div>
+    <div class="item5">
+      <div class="excercise subcard">
+        <div class="top">
+          <span class="title">excercise</span>
+          <a href="#"> <i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <div>
+          <h1 class="time"></h1>
+          <p class="previous"></p>
+        </div>
+      </div>
+    </div>
+    <div class="item6">
+      <div class="social subcard">
+        <div class="top">
+          <span class="title">social</span>
+          <a href="#"> <i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <div>
+          <h1 class="time"></h1>
+          <p class="previous"></p>
+        </div>
+      </div>
+    </div>
+    <div class="item7">
+      <div class="self-care subcard">
+        <div class="top">
+          <span class="title">self care</span>
+          <a href="#"> <i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+        <div>
+          <h1 class="time"></h1>
+          <p class="previous"></p>
+        </div>
+      </div>
+    </div>
+  </main>
   
   <footer>
     <div class="attribution">

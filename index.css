@@ -27,8 +27,8 @@
 }
 
 
-.attribution { font-size: 11px; text-align: center; display: none;}
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsl(246, 80%, 60%); }
 
 * {
     margin: 0;
@@ -38,5 +38,225 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--Very-dark-blue);
+    min-width: fit-content;
+}
 
+/* ..............
+grid container 
+................*/
+main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:1rem;
+    padding: 1rem;
+}
+
+/* .............
+setting all cards design
+............... */
+main > div {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 12px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position: 90% -3%;
+    position: relative;
+}
+
+/* ..............
+styling main card jeremy robson as its styling is unique
+................. */
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 26rem;
+    background-color: var(--Dark-blue);
+}
+    .item1 .sub {
+        width: 100%;
+        height: 70%;
+        border-radius: 12px;
+        background-color: var(--Blue);
+        padding: 1.5rem;
+    }
+        .item1 .sub img {
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+        .item1 .sub p {
+            font-size: 10px;
+            font-weight: 300;
+            margin-top: 3rem;
+            color: var(--Pale-Blue);
+        }
+        .item1 .sub h1 {
+            font-weight: 300;
+        }
+    .item1 .frequency {
+        padding: 1rem
+    }
+    .item1 .frequency a{
+        display: block;
+        
+        color: var(--Desaturated-blue);
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+    
+    .item1 .frequency a:hover{
+        color: white;
+    }
+/* ..............
+styling typography and subcard design
+............... */
+
+/* setting subcard style  */
+.subcard {
+    width: 100%;
+    height: 85%;
+    background-color: var(--Dark-blue);
+    position: absolute;
+    border-radius: 12px;
+    bottom: 0;
+    padding: 1.3rem;
+}
+.subcard:hover {
+    opacity: 0.8;
+}
+.title {
+   text-transform: capitalize;
+   font-size: 14px;
+   font-weight: 500;
+   }
+
+/* three dots option menu */
+a{
+    text-decoration: none;
+    color: white;
+}
+i {
+    float: right;
+}
+/* time spent on each task on daily, montly basis etc. */
+.time {
+    font-weight: 300;
+    font-size: 3rem;
+    padding-top: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+/* time spent in last day, week or so */
+.previous {
+    font-size: 12px;
+    color: var(--Pale-Blue);
+}
+
+
+/* setting unique backgrond color and icons for each card*/
+.item2 {
+    background-color: var(--Light-red-work);
+    background-image: url(./images/icon-work.svg); 
+}
+.item3 {
+    background-color: var(--Soft-blue-play);
+    background-image: url(./images/icon-play.svg); 
+}
+.item4 {
+    background-color: var(--Light-red-study);
+    background-image: url(./images/icon-study.svg); 
+}
+.item5 {
+    background-color: var(--Lime-green-exercise);
+    background-image: url(./images/icon-exercise.svg); 
+}
+.item6 {
+    background-color: var(--Violet-social);
+    background-image: url(./images/icon-social.svg); 
+}
+.item7 {
+    background-color: var(--Soft-orange-self-care);
+    background-image: url(./images/icon-self-care.svg); 
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+}
+
+@media screen and (max-width:500px) {
+    body {
+        height: fit-content;
+        display: block;
+    }
+    main {
+        grid-template-columns: auto;
+        margin-block:3rem
+        
+    }
+
+    main >div {
+        width: 100%;
+        height: 8rem;
+    }
+
+    .item1 {
+        grid-row-start: auto;
+        grid-row-end: auto;
+        height: fit-content;
+    }
+        .item1 .sub {
+            height: fit-content;
+            display: flex;
+            justify-content: start;
+            gap: 1rem;
+            align-items: center;
+            align-content: center;
+            padding-block: 2rem;
+        }
+        .item1 .sub p {
+            margin-top: 0rem;
+            
+        }
+        .item1 .sub h1 {
+            font-size: 20px;
+        }
+    .item1 .frequency{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+
+    }
+    .item1 .frequency a {
+        margin-bottom: 0;
+    }
+    .subcard{
+        height: 80%;
+        padding: 1rem;
+    }
+    .time {
+        font-size: 28px;
+        padding-block: 0.5rem;
+    }
+    .subcard div:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer {
+        position: relative;
+    }
 }
